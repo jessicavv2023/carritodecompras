@@ -14,7 +14,7 @@ public class TarjetaDeCredito {
 
     public boolean lanzarCompra (Compra compra){
 
-if (this.saldo > compra.getValor()){
+if (this.saldo >= compra.getValor()){
     this.saldo -= compra.getValor();
     this.listaDeCompras.add(compra);
     return true;
